@@ -1,0 +1,18 @@
+.menu-item li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0px 16px;
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+.menu-item {
+    display: flex;
+}
+.menu-background{
+    background-color: fuchsia;
+    padding: 18px;
+}
+.menu-styles{
+height: 50px;
+}

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Manubar from './components/Allproducts/Manubar/Manubar';
+import Allproducts from './components/Allproducts/Allproducts';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
+import "aos/dist/aos.css"
 
 function App() {
+  const [count, setCount] = useState(0)
+  const plus = () => setCount(count + 1)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App ">
+      <Manubar count={count}></Manubar>
+      <Allproducts counter={plus}></Allproducts>
     </div>
   );
 }
